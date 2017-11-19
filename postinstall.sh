@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IP_ADDR=$(ip addr | grep -E "BROADCAST," | cut -c 3-9)
+IP_ADDR=$(ip addr | grep -E "BROADCAST," | cut -c 4-9)
 
 touch /etc/sysconfig/network-scripts/ifcfg-$(echo $IP_ADDR)
 sed -i -e 's/ONBOOT=no/ONBOOT=yes/' /etc/sysconfig/network-scripts/ifcfg-$(echo $IP_ADDR)
