@@ -1,5 +1,5 @@
-simple collection of bash scripts.
-tested with centos 7 on virtualbox
 
+collection of various bash scripts
 
-- postinstall.sh is useful if centos has been installed without network interface enabled
+- postinstall.sh - practice script to enable networking on headless centos 7 server
+- newgit.sh - updates git remote with new URL
